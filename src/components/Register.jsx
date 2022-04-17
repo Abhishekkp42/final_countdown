@@ -13,7 +13,7 @@ export const Register = () => {
     e.preventDefault();
     console.log('here', registerData);
     axios
-      .post('http://localhost:8080/register', registerData)
+      .post('http://localhost:5000/register', registerData)
       .then((response) => {
         alert('Registered Successfully');
         // console.log(response)

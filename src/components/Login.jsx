@@ -15,7 +15,7 @@ export const Login = () => {
     e.preventDefault();
     console.log('userdata', userData);
     axios
-      .post('http://localhost:8080/login', userData)
+      .post('http://localhost:5000/login', userData)
       .then((response) => {
         alert('Verified Successfully!');
         sessionStorage.setItem('user', JSON.stringify(response.data.user));

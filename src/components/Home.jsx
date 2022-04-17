@@ -50,7 +50,7 @@ export const Home = () => {
   useEffect(() => getData(), []);
 
   const getData = () => {
-    axios.get(`http://localhost:8080/teacher?_limit=4&_page=${page}`).then((res) => {
+    axios.get(`http://localhost:5000/teacher?_limit=4&_page=${page}`).then((res) => {
       console.log('res data', res.data);
       setTeachers(res.data.teachersData);
     });

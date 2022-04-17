@@ -40,7 +40,7 @@ export const ClassPage = () => {
   useEffect(() => getData(), []);
 
   const getData = () => {
-    axios.get(`http://localhost:8080/class`).then((res) => {
+    axios.get(`http://localhost:5000/class`).then((res) => {
       console.log('res data', res.data);
       setClasses(res.data.classessData);
     });
